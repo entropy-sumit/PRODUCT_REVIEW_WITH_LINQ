@@ -38,13 +38,16 @@ namespace ProductReviewMangementWithLinq
 
             };
 
-            foreach (var list in listProductReview)
-            {
-                Console.WriteLine("ProductID: " + list.ProductID + " " + "UserId: " + list.UserID + " " + "Rating: " + list.Rating + " "
-                    + "Review: " + list.Review + " " + "islike : " + list.isLike + " ");
-            }
+            //foreach (var list in listProductReview)
+            //{
+            //    Console.WriteLine("ProductID: " + list.ProductID + " " + "UserId: " + list.UserID + " " + "Rating: " + list.Rating + " "
+            //        + "Review: " + list.Review + " " + "islike : " + list.isLike + " ");
+            //}
+            //Console.WriteLine("========================================================================");
 
-
+            Management management = new Management();
+            //UC2
+            management.TopRecordsList(listProductReview);
         }
     }
 }
