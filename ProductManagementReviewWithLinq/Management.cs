@@ -20,7 +20,19 @@ namespace ProductReviewMangementWithLinq
                     + "Review: " + list.Review + " "+ "islike:" + list.isLike + " ");
             }
         }
+        public void SelectedRecords(List<ProductReview> review)
+        {
+            var recordData = from productReviews in review
+                             where (productReviews.ProductID == 1 || productReviews.ProductID == 4 || productReviews.ProductID == 9)
+                             && productReviews.Rating > 3
+                             select productReviews;
 
-      
+            foreach (var list in recordData)
+            {
+                Console.WriteLine("ProductID: " + list.ProductID + " " + "UserId: " + list.UserID + " " + "Rating: " + list.Rating + " "
+                    + "Review: " + list.Review + " " + list.isLike + " ");
+            }
+        }
+       
     }
 }
