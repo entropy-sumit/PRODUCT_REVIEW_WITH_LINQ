@@ -47,7 +47,12 @@ namespace ProductReviewMangementWithLinq
 
             Management management = new Management();
             //UC2
-            management.TopRecordsList(listProductReview);
+            //management.TopRecordsList(listProductReview);
+
+            //UC3
+            management.SelectedRecords(listProductReview);
+
+ 
         }
     }
 }
