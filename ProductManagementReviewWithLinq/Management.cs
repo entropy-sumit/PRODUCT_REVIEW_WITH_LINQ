@@ -64,5 +64,14 @@ namespace ProductReviewMangementWithLinq
                     + "Review: " + list.Review + " " + list.isLike + " ");
             }
         }
+        public void RetrievProductIdandReviewUsingSelect(List<ProductReview> review)
+        {
+            var recordData = review.Select(productreview => new { ProductId = productreview.ProductID, Review = productreview.Review });
+
+            foreach (var list in recordData)
+            {
+                Console.WriteLine("ProductId:" + list.ProductId + "||Review:" + list.Review);
+            }
+        }
     }
 }

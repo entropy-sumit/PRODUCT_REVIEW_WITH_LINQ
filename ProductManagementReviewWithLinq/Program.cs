@@ -61,6 +61,9 @@ namespace ProductReviewMangementWithLinq
             //UC6
             management.SkipTopFive(listProductReview);
 
+            //UC7
+            management.RetrievProductIdandReviewUsingSelect(listProductReview);
+
 
 
 
