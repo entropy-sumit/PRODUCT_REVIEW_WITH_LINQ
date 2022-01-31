@@ -50,9 +50,13 @@ namespace ProductReviewMangementWithLinq
             //management.TopRecordsList(listProductReview);
 
             //UC3
-            management.SelectedRecords(listProductReview);
+            //management.SelectedRecords(listProductReview);
 
- 
+            //UC4
+            management.RetrieveCountOfRecords(listProductReview);
+
+
+
         }
     }
 }
