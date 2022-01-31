@@ -53,7 +53,11 @@ namespace ProductReviewMangementWithLinq
             //management.SelectedRecords(listProductReview);
 
             //UC4
-            management.RetrieveCountOfRecords(listProductReview);
+            //management.RetrieveCountOfRecords(listProductReview);
+
+            //UC5
+            management.RetrieveProductIdandReview(listProductReview);
+
 
 
 

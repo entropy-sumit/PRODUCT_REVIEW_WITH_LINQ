@@ -44,5 +44,16 @@ namespace ProductReviewMangementWithLinq
             }
 
         }
+        public void RetrieveProductIdandReview(List<ProductReview> review)
+        {
+            var recordData = (from productreview in review select new { ProductId = productreview.ProductID, Review = productreview.Review });
+
+
+            foreach (var list in recordData)
+            {
+                Console.WriteLine("ProductId:" + list.ProductId + "||Review:" + list.Review);
+
+            }
+        }
     }
 }
